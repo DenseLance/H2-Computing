@@ -1,0 +1,44 @@
+body { background: greenyellow; }
+
+h1 { color: orange; }
+
+p {
+    background: grey;
+    color: red;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+i {
+    color: black;
+    font-family: Helvetica;
+    font-size: 15px;
+}
+
+p i {
+    color: green;
+    font-family: Helvetica;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#special { 
+    color: lemonchiffon;
+    font-family: Helvetica;
+    font-style: bold;
+    font-size: 40px;
+}
+
+#dio {
+    color: black;
+    font-family: Helvetica;
+    font-style: bold;
+    font-size: 75px;
+}
+
+.info { 
+    color: gold;
+    font-family: Helvetica;
+    font-style: bold;
+    font-size: 60px;
+}
