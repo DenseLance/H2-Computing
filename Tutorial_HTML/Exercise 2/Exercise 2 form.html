@@ -1,6 +1,9 @@
 <!doctype html>
 
 <html>
+    <style>
+        input {color: grey;}
+    </style>
     <head>
         <title>
             H2 Computing Sign Up Form
@@ -11,9 +14,63 @@
             H2 Computing Sign Up Form
         </h1>
         <form action = "Exercise 2 response.html">
-            Search:
-            <input type = "text" name = "q">
-            <input type = "submit" value = "Search!">
+            <!--autofocus makes the outline of box bolded when clicked-->
+            <!--required makes this input to be required before submission-->
+            <fieldset>
+                <legend>Student Particulars</legend>
+                <br>
+                <table>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type = "text" name = "First Name" value = "First Name" autocomplete autofocus required></td>
+                        <td>Last name:</td>
+                        <td><input type = "text" name = "Last Name" value = "Last Name" autocomplete autofocus required></td>
+                    </tr> 
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type = "text" name = "Email" value = "name@email.com" autocomplete autofocus required></td>
+                        <td>Contact:</td>
+                        <td><input type = "text" name = "Contact" autofocus required></td>
+                    </tr> 
+                    <tr>
+                        <td>Class:</td>
+                        <td><input type = "text" name = "Class" autofocus required></td>
+                        <td>Gender:</td>
+                        <td>
+                            <select name = "Gender" autofocus required>
+                                <option value = "male">Male</option>
+                                <option value = "female">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td><input type = "date" name = "date" min = "2000-01-01" autofocus required></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Subject Combination</legend> <!--to be edited-->
+                <input type = "radio" name = "Subject Combinations">
+                <text>
+                    P CP M E
+                </text>
+                <br>
+                <input type = "radio" name = "Subject Combinations">
+                <text>
+                    C CP M E
+                </text>
+                <br>
+                <input type = "radio" name = "Subject Combinations">
+                <text>
+                    Others:
+                </text>
+                <input type = "text" name = "Subject Combinations" autofocus>
+            </fieldset>
+            <br>
+            <input type = "submit" value = "Submit" autofocus>
+            </table>
         </form>
     </body>
 </html>
