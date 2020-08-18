@@ -1,0 +1,23 @@
+body { 
+    font-family: sans-serif; 
+}
+
+h1 { 
+    text-align: center; 
+}
+
+table { 
+    width: 400px; 
+}
+
+th { 
+    text-align: right; 
+}
+
+td { 
+    padding-left: 1em; padding-right: 1em;
+}
+
+button { 
+    text-align: right; 
+}
