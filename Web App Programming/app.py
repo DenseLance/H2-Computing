@@ -7,7 +7,6 @@ from flask import Flask
 app = Flask(__name__) # __name__ is __main__; uses current file name to create a flask application
 
 @app.route("/") # define behaviour for route directory/url
-
 def home():
     return "My first home page"
 
