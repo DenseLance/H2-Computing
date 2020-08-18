@@ -1,0 +1,69 @@
+h1 {
+
+    border: solid;
+    border-color: black;
+
+    font-family: Century Gothic;
+    font-size: 50px;
+    text-align: left;
+
+    padding: 20px;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.copyright {
+
+    font-family: Helvetica;
+    font-size: 12px;
+    text-align: right;
+
+}
+
+/* Navigation bar start */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/* Navigation bar end */
+
+/* Moving title start */
+.moving-title {
+    background-color: red;
+    position: relative;
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-direction: reverse;  
+}
+
+@keyframes circle {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+/* Moving title end */
