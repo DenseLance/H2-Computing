@@ -1,23 +1,36 @@
+h1 {
+    text-align: center;
+    font-family: Century Gothic;
+}
+
 body { 
-    font-family: sans-serif; 
-}
-
-h1 { 
-    text-align: center; 
-}
-
-table { 
-    width: 400px; 
-}
-
-th { 
-    text-align: right; 
-}
-
-td { 
-    padding-left: 1em; padding-right: 1em;
+    font-family: Helvetica; 
 }
 
 button { 
-    text-align: right; 
+    text-align: center;
+    position: center;
 }
+
+p {
+    border: solid;
+    border-color: black;
+}
+
+/* Moving title start */
+.moving-title {
+    background-color: red;
+    position: relative;
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-direction: reverse;  
+}
+
+@keyframes circle {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+/* Moving title end */
