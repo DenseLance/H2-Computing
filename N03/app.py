@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect, request
 
 app = Flask(__name__)
 
@@ -13,6 +13,10 @@ def student():
 @app.route("/teacher/")
 def teacher():
     return render_template("teacher.html")
+
+@app.route("/form/")
+def form():
+    return render_template("message_form.html")
 
 @app.route('/display/<role>')
 def display(role):

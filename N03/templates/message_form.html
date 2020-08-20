@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class Message Board</title>
+        <link rel="stylesheet" href="/static/style/style.css">
+    </head>
+    <body>
+        <h1>Post a Message</h1>
+        <form action = "{{ url_for('form') }}" method = "POST">
+            <p>Username:<input type = "text" name = "username" placeholder = "Tom" required autofocus autocomplete></p>
+            <p>E-mail:<input type="email" name ="email" placeholder = "tom@example.com" required autofocus autocomplete></p>
+            <p>Message:</p>
+            <p><textarea name = "message" rows="3" cols="50" required autofocus></textarea></p> 
+            <p><input type="submit" value="Post Now"></p>
+        </form>
+    </body>
