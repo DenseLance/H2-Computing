@@ -6,8 +6,15 @@
         <link rel = "stylesheet" href = "/static/css/style.css">
     </head>
     <body>
+        <table id = "navigation">
+            <tr>
+                <td><a href = "/">Home</a></td>
+                <td><a href = "/about">About</a></td>
+                <td><a href = "/rp_calc">RP Calculator</a></td>
+            </tr>
+        </table>
         <h1>Rank Point Calculator</h1>
-        <form action = "{{ url_for('form') }}" method = "POST" id = "set_grades">
+        <form action = "{{ url_for('display') }}" method = "POST" id = "set-grades">
             <table>
                 <tr>
                     <th>Subject</th>
@@ -72,7 +79,7 @@
                 <tr>
                     <td>General Paper</td>
                     <td>
-                        <select name = "H2 Subject 2">
+                        <select name = "General Paper">
                             <option value = "A">A</option>
                             <option value = "B">B</option>
                             <option value = "C">C</option>
@@ -83,21 +90,40 @@
                         </select>
                     </td>
                 </tr>
-                <tr>
-                    <td>Mother Tongue</td>
-                    <td>
-                        <select name = "Mother Tongue">
-                            <option value = "A">A</option>
-                            <option value = "B">B</option>
-                            <option value = "C">C</option>
-                            <option value = "D">D</option>
-                            <option value = "E">E</option>
-                            <option value = "S">S</option>
-                            <option value = "U">U</option>
-                        </select>
-                    </td>
-                </tr>
+                {% if PW == "yes" %}
+                    <tr>
+                        <td>Project Work</td>
+                        <td>
+                            <select name = "Project Work">
+                                <option value = "A">A</option>
+                                <option value = "B">B</option>
+                                <option value = "C">C</option>
+                                <option value = "D">D</option>
+                                <option value = "E">E</option>
+                                <option value = "S">S</option>
+                                <option value = "U">U</option>
+                            </select>
+                        </td>
+                    </tr>
+                {% endif %}
+                {% if MT == "yes" %}
+                    <tr>
+                        <td>Mother Tongue</td>
+                        <td>
+                            <select name = "Mother Tongue">
+                                <option value = "A">A</option>
+                                <option value = "B">B</option>
+                                <option value = "C">C</option>
+                                <option value = "D">D</option>
+                                <option value = "E">E</option>
+                                <option value = "S">S</option>
+                                <option value = "U">U</option>
+                            </select>
+                        </td>
+                    </tr>
+                {% endif %}
             </table>
+            <p><input type = "submit" value = "Calculate!"></p>
         </form>
     </body>
 </html>

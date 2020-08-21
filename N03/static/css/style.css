@@ -2,3 +2,8 @@ h1 {
     font-family: Century Gothic;
     text-align: left;
 }
+
+text {
+    border: solid 1px black;
+    padding: 5px;
+}

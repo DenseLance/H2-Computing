@@ -14,9 +14,15 @@ def student():
 def teacher():
     return render_template("teacher.html")
 
-@app.route("/form/")
+@app.route("/form/", methods = ["GET", "POST"])
 def form():
-    return render_template("message_form.html")
+    if request.method == "GET": # only enter website
+        return render_template("message_form.html")
+    else: # POST --> form is filled
+        return render_template("message_result.html",\
+             username = request.form["username"],\
+             email = request.form["email"],\
+             message = request.form["message"])
 
 @app.route('/display/<role>')
 def display(role):

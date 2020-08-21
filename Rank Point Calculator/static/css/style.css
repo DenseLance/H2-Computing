@@ -7,6 +7,18 @@ table {
     align-content: center;
 }
 
+#rank-point tr > td:first-child + td + td {
+     text-align: right;
+}
+
+#rank-point tr > th:first-child + th + th {
+    text-align: right;
+}
+
+th {
+    text-align: left;
+}
+
 #navigation td {
     border: solid 1px;
     border-color: black;
@@ -15,6 +27,10 @@ table {
 }
 
 #settings select {
+    width: 100%;
+}
+
+#set-grades select {
     width: 100%;
 }
 
