@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    align-content: center;
+}
+
+#navigation td {
+    border: solid 1px;
+    border-color: black;
+    width: 120px;
+    text-align: center;
+}
+
+#settings select {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: red
+}
+
+a:active {
+    color: red;
+}
