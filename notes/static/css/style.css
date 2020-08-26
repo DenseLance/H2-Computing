@@ -1,13 +1,20 @@
 /* whole website */
 body {
-    background-color: #ccccd8 !important;
+    background-color: #efeff7 !important;
     font-family: Helvetica;
     font-size: 18px;
     text-align: justify;
 }
 
+h2 {
+    font-family: Helvetica;
+    font-size: 24px !important;
+    font-weight: bold ! important; 
+}
+
 /* main content */
 #content {
+    margin-top: 1% !important;
     margin-left: 2% !important;
     margin-right: 2% !important;
 }
@@ -19,7 +26,7 @@ body {
     text-align: left;
     padding: 15px;
     border-bottom: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     border-color: grey;
 }
 #navigation table {

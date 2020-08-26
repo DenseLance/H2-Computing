@@ -1,16 +1,30 @@
-<!DOCTYPE html>
+<!-- extend from base.html -->
+{% extends "base.html" %}
 
-<html>
-    <head>
-        <title>[Home] NanoVoid</title>
-        <link rel = "stylesheet" href = "{{url_for('static', filename = 'css\style.css')}}"></link>
-    </head>
+<!-- title -->
+{% block title %}About{% endblock %}
 
-    <body>
-        <table><tr><td><h1 class = "moving-title">NanoVoid</h1></td></tr></table>
+<!-- head -->
+{% block head %}
+    {{ super() }}
+{% endblock %}
 
-        <div class = "copyright">© 2020 NanoVoid Productions. All rights reserved.</div>
-    </body>
-</html>
-  
+<!-- navigation bar -->
+{% block navigation %}
+    {{ super() }}
+{% endblock %}
 
+<!-- main content -->
+{% block content %}
+    {{ super() }}
+    <h2>About NanoVoid</h2>
+    <p>NanoVoid exists to make games fun.</p>
+    <h2>About Me</h2>
+    <p>It's a-me Mario!</p>
+    <img height = "150px", width = "250px", src = "{{ url_for('static', filename = 'pictures/mario.jpg') }}" />
+{% endblock %}
+
+<!-- copyright -->
+{% block copyright %}
+    {{ super() }}
+{% endblock %}
