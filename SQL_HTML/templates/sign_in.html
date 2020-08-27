@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang = 'en'>
+    <head>
+        <title>Sign In</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = '/css/style.css') }}">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><a href = "{{ url_for('sign_up') }}">Sign Up</a></td>
+                <td><a href = "{{ url_for('sign_in') }}">Sign In</a></td>
+                <td><a href = "{{ url_for('forum') }}">Forum</a></td>
+            </tr>
+        </table>
+        <form action = "{{ url_for('sign_in') }}" method = "POST">
+            <p>
+                Username:
+                <input name = "username" type = "text" placeholder = "Tom" required autofocus autocomplete>
+            </p>
+            <p>
+                Password:
+                <input name = "password" type = "password" required autofocus autocomplete>
+            </p>
+            <p>
+                Message:
+                <br>
+                <textarea name = "message" placeholder = "Say Hello!" required autofocus></textarea>
+            </p>
+            <p>
+                <input value = "Sign in!" type = "submit">
+            </p>
+        </form>
+        {% if enter == False %}
+        <p class = "error">Invalid username or password. Please try again.</p>
+        {% elif enter == True %}
+        <p class = "success">Message sent!</p>
+        {% endif %}
+    </body>
+</html>

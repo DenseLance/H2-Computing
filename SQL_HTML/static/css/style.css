@@ -1,0 +1,17 @@
+p.error {
+    border: solid black 1px;
+    background: #fff555
+}
+
+p.success {
+    border: solid black 1px;
+    background: greenyellow
+}
+
+table td {
+    border: solid black 1px
+}
+
+table th {
+    border: solid black 1px
+}
