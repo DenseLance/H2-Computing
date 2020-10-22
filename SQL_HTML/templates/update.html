@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang = 'en'>
+    <head>
+        <title>Update</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = '/css/style.css') }}">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><a href = "{{ url_for('forum') }}">Forum</a></td>
+                <td><a href = "{{ url_for('sign_up') }}">Sign Up</a></td>
+                <td><a href = "{{ url_for('sign_in') }}">Sign In</a></td>
+                <td><a href = "{{ url_for('update') }}">Update</a></td>
+                <td><a href = "{{ url_for('delete') }}">Delete</a></td>
+            </tr>
+        </table>
+        <form action = "{{ url_for('update') }}" method = "POST">
+            <p>
+                Username: 
+                <input type = "text" name = "username" autofocus required autocomplete>
+            </p>
+            <p>
+                Password: 
+                <input type = "password" name = "password" autofocus required autocomplete>
+            </p>
+            <p>
+                Post Number: 
+                <input type = "text" name = "message_id" autofocus required>
+            </p>
+            <p>
+                Update Message:
+                <br>
+                <textarea name = "message" required></textarea>
+            </p>
+            <input type = "submit" value = "Update!">
+        </form>
+        {% if updated == False %}
+        <p class = "error">Invalid post. Please try again.</p>
+        {% elif updated == True %}
+        <p class = "success">Message updated!</p>
+        {% endif %}
+    </body>
+</html>

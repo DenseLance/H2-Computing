@@ -8,9 +8,11 @@
     <body>
         <table>
             <tr>
+                <td><a href = "{{ url_for('forum') }}">Forum</a></td>
                 <td><a href = "{{ url_for('sign_up') }}">Sign Up</a></td>
                 <td><a href = "{{ url_for('sign_in') }}">Sign In</a></td>
-                <td><a href = "{{ url_for('forum') }}">Forum</a></td>
+                <td><a href = "{{ url_for('update') }}">Update</a></td>
+                <td><a href = "{{ url_for('delete') }}">Delete</a></td>
             </tr>
         </table>
         <form action = "{{ url_for('sign_in') }}" method = "POST">

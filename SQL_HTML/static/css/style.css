@@ -8,6 +8,10 @@ p.success {
     background: greenyellow
 }
 
+#forum {
+    width: 100%;
+}
+
 table td {
     border: solid black 1px
 }

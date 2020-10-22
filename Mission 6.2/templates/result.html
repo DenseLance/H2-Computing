@@ -1,0 +1,74 @@
+<!-- extend from base.html -->
+{% extends "base.html" %}
+
+<!-- title -->
+{% block title %}Home{% endblock %}
+
+<!-- head -->
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+<!-- navigation bar -->
+{% block navigation %}
+    {{ super() }}
+{% endblock %}
+
+<!-- main content -->
+{% block content %}
+    {{ super() }}
+    <h2>About {{ anime[1] }}</h2>
+    <table style = "text-align: center" class = "table table-hover table-light">
+    <thead>
+        <tr>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">AnimeID</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Anime</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Genre</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Start Date</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">End Date</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Number of Episodes</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Synopsis</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style = "border-top: 1px solid #dee2e6 !important" scope = "row">{{ anime[0] }}</td>
+            <td style = "border-top: 1px solid #dee2e6 !important" >{{ anime[1] }}</td>
+            <td style = "border-top: 1px solid #dee2e6 !important" >{{ genre }}</td>
+            <td style = "border-top: 1px solid #dee2e6 !important" >{{ anime[2] }}</td>
+            <td style = "border-top: 1px solid #dee2e6 !important" >{{ anime[3] }}</td>
+            <td style = "border-top: 1px solid #dee2e6 !important" >{{ anime[4] }}</td>
+            <td style = "border-top: 1px solid #dee2e6 !important; text-align: justify">{{ anime[5] }}</td>
+    </tbody>
+    </table>
+    <h2>Recommendations for {{ anime[1] }}</h2>
+    <table style = "text-align: center" class = "table table-hover table-light">
+    <thead>
+        <tr>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Username</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Anime</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Date</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Ratings</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Similar Anime</th>
+            <th style = "border-top: 1px solid #dee2e6 !important; border-bottom: 2px solid #dee2e6 !important" scope = "col">Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            <td style = "border-top: 1px solid #dee2e6 !important" scope = "row">{{ row[0] }}</td>
+            <td style = "border-top: 1px solid #dee2e6 !important" ><a href = "{{ url_for('result', animeid = row[6]) }}">{{ row[1] }}</a></td>
+            <td style = "border-top: 1px solid #dee2e6 !important" >{{ row[2] }}</td>
+            <td style = "border-top: 1px solid #dee2e6 !important" >{{ row[3] }}</td>
+            <td style = "border-top: 1px solid #dee2e6 !important" ><a href = "{{ url_for('result', animeid = row[7]) }}">{{ row[4] }}</a></td>
+            <td style = "border-top: 1px solid #dee2e6 !important; text-align: justify">{{ row[5] | safe }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}
+
+<!-- copyright -->
+{% block copyright %}
+    {{ super() }}
+{% endblock %}
