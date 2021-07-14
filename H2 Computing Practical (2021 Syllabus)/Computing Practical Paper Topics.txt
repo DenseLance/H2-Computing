@@ -1,0 +1,81 @@
+MENU
+0.1 Data validation
+
+SORT ALGORITHMS
+1.1 Bubble sort
+1.2 Insertion sort
+1.3 Selection sort
+1.4 Quick sort
+1.5 Merge sort
+
+SEARCH ALGORITHMS
+2.1 Binary search
+
+HASHING
+3.1 Hash table
+	--> hash
+	--> rehash
+	--> insert
+	--> search
+	--> load factor
+
+DATA STRUCTURES
+4.1 Stack
+	--> push
+	--> pop
+	--> peek
+	--> size
+4.2 Queue
+	--> enqueue
+	--> dequeue
+	--> peek
+	--> size
+	*** linear implementation
+	*** circular implementation
+4.3 SORTED Linked list
+	--> Node class + getter/setter for data and pointer
+	--> insert
+	--> delete
+	--> search
+	--> size
+	--> return as list
+	*** OOP implementation
+	*** free space list implementation
+
+SEARCH TREES
+5.1 Binary Search Tree
+	--> insert
+	--> search
+	--> height
+	--> inorder traversal
+	--> preorder traversal
+	--> postorder traversal
+	*** OOP implementation
+	*** free space list implementation
+
+FILE OPERATIONS
+6.1 Read/Write File
+
+NUMBER CONVERSIONS
+7.1 Denary to base
+7.2 Base to denary
+
+RELATIONAL DATABASE MANAGEMENT SYSTEM
+8.1 CREATE TABLE
+8.2 INSERT INTO
+8.3 SELECT FROM
+
+WEB APPLICATION
+9.1 Flask
+9.2 HTML
+9.3 CSS
+
+SOCKET PROGRAMMING
+10.1 Socket Server
+10.2 Socket Client
+
+STRING FORMATTING
+11.1 String Formatting
+
+NoSQL
+12.1 NoSQL

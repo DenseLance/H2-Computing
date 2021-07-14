@@ -1,0 +1,17 @@
+body {
+font-family: Helvetica;
+font-size: 14px;
+}
+
+table {
+align-content: center;
+width: 100%;
+}
+
+table th {
+border: solid 1px black;
+}
+
+table td {
+border: solid 1px black;
+}

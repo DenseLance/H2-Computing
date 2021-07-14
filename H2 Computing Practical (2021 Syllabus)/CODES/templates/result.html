@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<link rel = "stylesheet" href = "{{url_for('static', filename = "css/style.css")}}">
+</head>
+<body>
+<table>
+<tr>
+<th>PersonID</th>
+<th>Name</th>
+<th>Age</th>
+</tr>
+{% for person in result %}
+<tr>
+<td>{{person[0]}}</td>
+<td>{{person[1]}}</td>
+<td>{{person[2]}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
