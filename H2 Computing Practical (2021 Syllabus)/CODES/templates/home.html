@@ -3,13 +3,28 @@
 <head>
 <title>Home</title>
 <link rel = "stylesheet" href = "{{url_for('static', filename = 'css/style.css')}}">
+<style>
+body {background-color: cyan;}
+</style>
 </head>
 <body>
-<h1>People</h1>
-<form action = "{{url_for('home')}}" method = "POST">
-<p>Name: <input type = "text" name = "name" required></p>
-<p>Age: <input type = "text" name = "age" required></p>
-<p><input type = "submit" value = "Submit!"></p>
-</form>
+<p style = "color:red;">I used inline CSS to turn this paragraph red!</p>
+<br>
+<p>I am now using Jinja to count numbers!</p>
+<p>{% for i in range(1, 21) %}
+{% if i > 15 %}
+{{i}}!! 
+{% elif i > 10 %}
+{{i}}! 
+{% else %}
+{{i}} 
+{% endif %}
+{% endfor %}
+</p>
+<br>
+<p>{{"If you have a variable that may include any of the following chars >, <, &, or \" you SHOULD escape it unless the variable contains well-formed and trusted HTML." | safe}}</p>
+<br>
+<p>This is my list: ["Tom", "Dick", "Harry"]</p>
+<p>Length of my list: {{ ["Tom", "Dick", "Harry"] | length }}</p>
 </body>
 </html>

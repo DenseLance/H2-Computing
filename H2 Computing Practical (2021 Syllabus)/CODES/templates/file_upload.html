@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>File Upload</title>
+<link rel = "stylesheet" href = "{{url_for('static', filename = "css/style.css")}}">
+</head>
+<body>
+<form method = "POST" action = "{{url_for('file_upload')}}" enctype = "multipart/form-data">
+<p><input type = "file" name = "img_file" accept = "image/*" required></p>
+<p><input type = "file" name = "doc_file" accept = ".doc,.docx" required></p>
+<p><input type = "submit" value = "Submit"><input type = "reset"></p>
+</form>
+</body>
+</html>

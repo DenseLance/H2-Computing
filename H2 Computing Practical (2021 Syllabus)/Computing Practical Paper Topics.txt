@@ -60,22 +60,37 @@ NUMBER CONVERSIONS
 7.1 Denary to base
 7.2 Base to denary
 
-RELATIONAL DATABASE MANAGEMENT SYSTEM
+SQL
 8.1 CREATE TABLE
 8.2 INSERT INTO
 8.3 SELECT FROM
+8.4 UPDATE SET
+8.5 DELETE FROM
+8.6 DROP TABLE
 
 WEB APPLICATION
 9.1 Flask
 9.2 HTML
 9.3 CSS
 
+NOSQL
+10.1 json.load
+10.2 insert_many
+10.3 insert_one
+10.4 find
+10.5 count_documents
+10.6 sort
+10.7 update_many
+10.8 update_one
+10.9 delete_many
+10.10 delete_one
+
 SOCKET PROGRAMMING
-10.1 Socket Server
-10.2 Socket Client
+11.1 Socket Server
+11.2 Socket Client
 
 STRING FORMATTING
-11.1 String Formatting
+12.1 String Formatting
 
-NoSQL
-12.1 NoSQL
+DATETIME
+13.1 Datetime

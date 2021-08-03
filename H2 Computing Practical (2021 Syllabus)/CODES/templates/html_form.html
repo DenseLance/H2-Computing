@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Form</title>
+<link rel = "stylesheet" href = "{{url_for('static', filename = "css/style.css")}}">
+</head>
+<body>
+<form method = "POST" action = "{{url_for('html_form')}}">
+<p>Name: <input type = "text" name = "name" value = "Pablo" required></p>
+<p>Age: <input type = "number" name = "age" value = 18 min = 0 max = 100 step = 1 required></p>
+<p>Gender: <input type = "radio" name = "gender" value = "M" checked required>M<input type = "radio" name = "gender" value = "F" required>F</p>
+<p>Class: <select name = "class" required>
+	{% for i in range(20) %}
+	<option value = "20J{{'{:0>2}'.format(i + 1)}}">20J{{'{:0>2}'.format(i + 1)}}</option>
+	{% endfor %}
+</select></p>
+<p>Favourite colour(s): <input type = "checkbox" name = "colour" value = "red" checked>red<input type = "checkbox" name = "colour" value = "orange" checked>orange<input type = "checkbox" name = "colour" value = "yellow">yellow<input type = "checkbox" name = "colour" value = "green">green<input type = "checkbox" name = "colour" value = "blue">blue<input type = "checkbox" name = "colour" value = "indigo">indigo<input type = "checkbox" name = "colour" value = "violet">violet</p>
+<p>Email: <input type = "email" name = "email" value = "PabloGaming@gmail.com" required></p>
+<p>Date of Birth: <input type = "date" name = "dob" value = "2003-01-01" required></p>
+<p><textarea name = "feedback" required>Enter your feedback here!</textarea></p>
+<p><input type = "submit" value = "Submit"><input type = "reset"></p>
+</form>
+</body>
+</html>

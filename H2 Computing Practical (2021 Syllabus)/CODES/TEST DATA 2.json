@@ -1,0 +1,12 @@
+[
+{"_id":1,"accused":"Rufus Schuck","gender":"F","age":45,"nationality":"Singapore","records":[{"type":"Arson","victims":["Luanne Lett","Hertha Dossantos"]},{"type":"Murder","victims":["Terrence Shannon"]},{"type":"Terrorism"}]},
+{"_id":2,"accused":"Ione Wolfe","gender":"F","age":42,"records":[{"type":"Terrorism"}]},
+{"_id":3,"accused":"Hillary Curl","gender":"M","age":44,"nationality":"Malaysia","records":[{"type":"Assault","victims":["So Atkins"]},{"type":"Murder","victims":["Carolann Kintner","Kathlene Collar"]}]},
+{"_id":4,"accused":"Juli Barnhill","gender":"F","age":44,"nationality":"Singapore","records":[{"type":"Murder","victims":["Luanne Lett","Kathlene Collar"]}]},
+{"_id":5,"accused":"Tashia Bowen","gender":"M","age":20,"records":[{"type":"Assault","victims":["So Atkins","Elvia Dubrey"]},{"type":"Terrorism"}]},
+{"_id":6,"accused":"Marguerita Mciver","gender":"M","age":35,"records":[{"type":"Theft","victims":["Toney Mcnab"]}]},
+{"_id":7,"accused":"Sharie Schall","gender":"M","age":24,"records":[{"type":"Embezzlement"}]},
+{"_id":8,"accused":"Paris Curington","gender":"F","age":41,"records":[{"type":"Embezzlement"},{"type":"Assault","victims":["Lashawna Meals","Luanne Lett"]}]},
+{"_id":9,"accused":"Ashely Faye","gender":"M","age":26,"nationality":"Malaysia","records":[{"type":"Murder","victims":["Hertha Dossantos","Ola Markell"]},{"type":"Kidnapping","victims":["Terrence Shannon"]},{"type":"Theft","victims":["Luanne Lett"]}]},
+{"_id":10,"accused":"Elvia Dubrey","gender":"F","age":45,"nationality":"Thailand","records":[{"type":"Kidnapping","victims":["Hertha Dossantos"]}]}
+]

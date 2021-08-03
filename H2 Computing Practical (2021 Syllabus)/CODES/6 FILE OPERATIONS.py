@@ -1,3 +1,4 @@
+from csv import DictReader
 from random import randint
 
 header = ["Name", "Age"]
@@ -33,3 +34,10 @@ with open("TEST DATA.txt", "r") as f: # read file
 print("Read headers:", read_header)
 print("Read person:", read_person)
 print()
+
+with open("TEST DATA.txt", "r") as f: # read file, DictReader
+    reader = list(DictReader(f))
+    f.close()
+
+for row in reader:
+    print(f"Person: {row['Name']}, Age: {row['Age']}")
