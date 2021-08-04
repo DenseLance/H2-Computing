@@ -20,6 +20,7 @@ def html_form():
         email = request.form["email"] # email
         dob = request.form["dob"] # date
         feedback = request.form["feedback"] # textarea
+        hidden = request.form["hidden"] # hidden
         # submit, reset
         
         return render_template("html_form_result.html",
@@ -30,7 +31,8 @@ def html_form():
                                colour = colour,
                                email = email,
                                dob = dob,
-                               feedback = feedback)
+                               feedback = feedback,
+                               hidden = hidden)
 
 @app.route("/file_upload/", methods = ["GET", "POST"])
 def file_upload():
