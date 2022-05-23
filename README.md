@@ -1,5 +1,6 @@
-# H2-Computing
+# H2 Computing Notes (2021 Syllabus)
 
-This is where I do my stuff. This Github account mainly focuses on web development and other school-related activities, which is stored within this repository.
+All computing stuff, in one place.
 
-Many bugs can be found within my code (since I'm still learning the basics!)
+Theory notes can be found here: https://docs.google.com/document/d/16Lgjz-lWVwoWkVEjhxhR_crKGq18WhIW3Nd6RiFPJ0U/edit?usp=sharing
+
