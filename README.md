@@ -2,5 +2,7 @@
 
 All computing stuff, in one place.
 
-Theory notes can be found here: https://docs.google.com/document/d/16Lgjz-lWVwoWkVEjhxhR_crKGq18WhIW3Nd6RiFPJ0U/edit?usp=sharing
+**Practical Notes**: https://github.com/DenseLance/H2-Computing/tree/master/H2%20Computing%20Practical%20(2021%20Syllabus)
+
+**Theory Notes**: 
 
